@@ -10,11 +10,11 @@ RUN apt update && apt install -y apache2
 
 RUN useradd -ms /bin/bash hillel_devops
 
-COPY index.html /var/www/html/index.html
+COPY index.html /var/www/html/
 
-COPY ports.conf /etc/apache2/ports.conf
+COPY ports.conf /etc/apache2/
 
-COPY apache2.conf /etc/apache2/apache2.conf
+COPY apache2.conf /etc/apache2/
 
 EXPOSE      8080
 
